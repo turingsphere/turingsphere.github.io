@@ -36,12 +36,13 @@ Colors:
 /**************************/
 body,
 html {
-    width: 100%;
+	width: 100%;
 	height: 100%;
 }
 
-body, p {
-	color: #5e6576; 
+body,
+p {
+	color: #5e6576;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -146,8 +147,8 @@ a:hover {
 	margin-bottom: 0.75rem;
 	padding: 0.125rem 1.75rem;
 	border-radius: 30px;
-	background-color: #ffe7eb;
-	color: #ff5574;
+	background-color: #e4e5fa;
+	color: #6168FF;
 	font-weight: 600;
 	font-size: 0.875rem;
 }
@@ -155,10 +156,10 @@ a:hover {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #FFC043;
 	border-radius: 30px;
-	background-color: #ff5574;
-	color: #ffffff;
+	background-color: #FFC043;
+	color: #000000;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -168,19 +169,20 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #ff5574; /* needs to stay here because of the color property of a tag */
+	color: #FFC043;
+	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #6168FF;
 	border-radius: 30px;
-	background-color: #ff5574;
+	background-color: #6168FF;
 	color: #ffffff;
 	font-weight: 600;
-	font-size: 0.875rem;
+	font-size: 0.900rem;
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -188,7 +190,8 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #ff5574; /* needs to stay here because of the color property of a tag */
+	color: #6168FF;
+	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -208,7 +211,8 @@ a:hover {
 
 .btn-solid-sm:hover {
 	background-color: transparent;
-	color: #ff5574; /* needs to stay here because of the color property of a tag */
+	color: #ff5574;
+	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -290,7 +294,8 @@ a:hover {
 	color: #5e6576;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none;
+	/* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -301,27 +306,29 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
-    -webkit-appearance: none;
+	/* you should keep these first rules in place to maintain cross-browser behavior */
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-image: url('../images/down-arrow.png');
-    background-position: 98% 50%;
-    background-repeat: no-repeat;
-    outline: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url('../images/down-arrow.png');
+	background-position: 98% 50%;
+	background-repeat: no-repeat;
+	outline: none;
 }
 
 .form-control-textarea {
 	display: block;
-	height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 14rem;
+	/* used instead of html rows to normalize height between Chrome and IE/FF */
 }
 
 .form-control-input:focus,
 .form-control-textarea:focus {
 	border: 1px solid #000000;
-	outline: none; /* Removes blue border on focus */
+	outline: none;
+	/* Removes blue border on focus */
 }
 
 .form-control-input:hover,
@@ -333,9 +340,9 @@ select {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #6168FF;
 	border-radius: 30px;
-	background-color: #ff5574;
+	background-color: #6168FF;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -345,9 +352,9 @@ select {
 }
 
 .form-control-submit-button:hover {
-	border: 1px solid #ff5574;
+	border: 1px solid #6168FF;
 	background-color: transparent;
-	color: #ff5574;
+	color: #6168FF;
 }
 
 
@@ -368,7 +375,7 @@ select {
 }
 
 .navbar .logo-image img {
-    width: 133px;
+	/*width: 133px;*/
 	height: 30px;
 }
 
@@ -382,7 +389,8 @@ select {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.25rem;
+	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -423,16 +431,17 @@ select {
 
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	animation: fadeDropdown 0.2s;
+	/* required for the fade animation */
 }
 
 @keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -465,6 +474,7 @@ select {
 	border: none;
 	background-color: #d1d1d1;
 }
+
 /* end of dropdown menu */
 
 .navbar .navbar-toggler {
@@ -726,6 +736,10 @@ select {
 	color: #ff5574;
 }
 
+.counter .counter-cell.yellow {
+	color: #FFC043;
+}
+
 .counter .purecounter {
 	margin-bottom: 1.5rem;
 	font-weight: 400;
@@ -734,7 +748,7 @@ select {
 }
 
 .counter .purecounter:after {
-    content: "+";
+	content: "+";
 	margin-left: 0.5rem;
 }
 
@@ -1019,7 +1033,7 @@ select {
 	left: 0;
 }
 
-.footer div[class*="col"] {  
+.footer div[class*="col"] {
 	/* selects all elements which have classes starting with col */
 	/* needed so that the absolute positioned decoration stays behind */
 	position: relative;
@@ -1037,7 +1051,7 @@ select {
 }
 
 .footer .fa-stack .fa-stack-1x {
-    color: #222222;
+	color: #222222;
 	transition: all 0.2s ease;
 }
 
@@ -1051,7 +1065,7 @@ select {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #222222;
+	color: #222222;
 }
 
 
@@ -1082,18 +1096,18 @@ select {
 /*     Back To Top Button     */
 /******************************/
 #myBtn {
-	position: fixed; 
-  	z-index: 99; 
-	bottom: 20px; 
-	right: 20px; 
-	display: none; 
+	position: fixed;
+	z-index: 99;
+	bottom: 20px;
+	right: 20px;
+	display: none;
 	width: 52px;
 	height: 52px;
-	border: none; 
-	border-radius: 50%; 
-	outline: none; 
-	background-color: #44434a; 
-	cursor: pointer; 
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	background-color: #44434a;
+	cursor: pointer;
 }
 
 #myBtn:hover {
@@ -1162,7 +1176,7 @@ select {
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1175,6 +1189,7 @@ select {
 		font-size: 2.75rem;
 		line-height: 3.5rem;
 	}
+
 	/* end of header */
 
 
@@ -1182,12 +1197,13 @@ select {
 	.counter .counter-container {
 		text-align: left;
 	}
-	
+
 	.counter .counter-cell {
 		display: inline-block;
 		margin-right: 3rem;
 		vertical-align: top;
 	}
+
 	/* end of details 2 */
 
 
@@ -1196,6 +1212,7 @@ select {
 		display: inline-block;
 		margin-right: 1rem;
 	}
+
 	/* end of contact */
 
 
@@ -1203,14 +1220,16 @@ select {
 	.ex-basic-1 .text-box {
 		padding: 1.75rem 2rem 0.875rem 2rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 768px */
 
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
+
 	/* General Styles */
 	.h2-heading {
 		width: 35.25rem;
@@ -1223,6 +1242,7 @@ select {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of general styles */
 
 
@@ -1267,7 +1287,7 @@ select {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.75rem;
 		padding-left: 0.75rem;
@@ -1287,6 +1307,7 @@ select {
 		margin-top: 0;
 		margin-left: 1rem;
 	}
+
 	/* end of navigation */
 
 
@@ -1309,6 +1330,7 @@ select {
 	.header .quote {
 		display: inline-block;
 	}
+
 	/* end of header */
 
 
@@ -1318,14 +1340,15 @@ select {
 		width: 298px;
 		vertical-align: top;
 	}
-	
+
 	.cards-1 .card:nth-of-type(3n+2) {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 	/* end of services */
 
-	
+
 	/* Details 1 */
 	.basic-1 .image-container {
 		margin-bottom: 0;
@@ -1338,6 +1361,7 @@ select {
 	.basic-1 h2 {
 		width: 23rem;
 	}
+
 	/* end of details 1 */
 
 
@@ -1351,6 +1375,7 @@ select {
 	body.modal-open .navbar {
 		padding-right: 0 !important;
 	}
+
 	/* end of stops body and navbar shift on modal open */
 
 	.modal {
@@ -1362,13 +1387,14 @@ select {
 		margin-right: auto;
 		margin-left: auto;
 	}
-	
+
 	.modal-content .image-container {
 		margin-bottom: 0;
 	}
+
 	/* end of details modal */
-	
-	
+
+
 	/* Details 2 */
 	.counter .text-container {
 		margin-bottom: 0;
@@ -1378,6 +1404,7 @@ select {
 		display: inline-block;
 		vertical-align: top;
 	}
+
 	/* end of details 2 */
 
 
@@ -1386,7 +1413,7 @@ select {
 		margin-right: 0.25rem;
 		margin-left: 0.25rem;
 	}
-	
+
 	.filter .grid {
 		max-width: 750px;
 	}
@@ -1398,6 +1425,7 @@ select {
 		margin-left: 0.625rem;
 		vertical-align: top;
 	}
+
 	/* end of projects */
 
 
@@ -1411,7 +1439,7 @@ select {
 		width: 22px;
 		background-size: 22px 34px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -16px;
 		width: 22px;
@@ -1422,7 +1450,7 @@ select {
 		display: flex;
 		align-items: flex-start;
 	}
-	
+
 	.slider-1 .text {
 		flex-direction: column;
 	}
@@ -1430,10 +1458,11 @@ select {
 	.slider-1 .testimonial-author {
 		margin-top: 0.625rem;
 	}
-	
+
 	.slider-1 .testimonial-image {
 		margin-right: 1.125rem;
 	}
+
 	/* end of testimonials */
 
 
@@ -1443,11 +1472,12 @@ select {
 		width: 298px;
 		vertical-align: top;
 	}
-	
+
 	.cards-2 .card:nth-of-type(3n+2) {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 	/* end of pricing */
 
 
@@ -1455,6 +1485,7 @@ select {
 	.basic-2 .text-container {
 		padding: 8rem;
 	}
+
 	/* end of invitation */
 
 
@@ -1464,6 +1495,7 @@ select {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of footer */
 
 
@@ -1480,6 +1512,7 @@ select {
 	.copyright .statement {
 		text-align: right;
 	}
+
 	/* end of copyright */
 
 
@@ -1494,32 +1527,35 @@ select {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 992px */
 
 
 /* Min-width 1200px */
 @media (min-width: 1200px) {
-	
+
 	/* General Styles */
 	.container {
 		max-width: 1140px;
 	}
+
 	/* end of general styles */
-	
+
 
 	/* Header */
 	.header {
 		overflow: hidden;
-		padding-top: 18.25rem;
+		padding-top: 11.25rem;
 		padding-bottom: 11.5rem;
 	}
 
 	.header .image-container {
 		position: relative;
 	}
-	
+
 	.header .image-container img {
 		position: absolute;
 		top: -80px;
@@ -1527,6 +1563,7 @@ select {
 		width: 840px;
 		max-width: none;
 	}
+
 	/* end of header */
 
 
@@ -1534,11 +1571,12 @@ select {
 	.cards-1 .card {
 		width: 342px;
 	}
-	
+
 	.cards-1 .card:nth-of-type(3n+2) {
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
 	}
+
 	/* end of services */
 
 
@@ -1551,6 +1589,7 @@ select {
 		margin-top: 5rem;
 		margin-left: 2.75rem;
 	}
+
 	/* end of details 1 */
 
 
@@ -1559,6 +1598,7 @@ select {
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
+
 	/* end of details modal */
 
 
@@ -1571,7 +1611,7 @@ select {
 	.counter .image-container {
 		position: relative;
 	}
-	
+
 	.counter .image-container img {
 		position: absolute;
 		top: -60px;
@@ -1579,6 +1619,7 @@ select {
 		width: 900px;
 		max-width: none;
 	}
+
 	/* end of details 2 */
 
 
@@ -1586,6 +1627,7 @@ select {
 	.filter .grid {
 		max-width: 1120px;
 	}
+
 	/* end of projects */
 
 
@@ -1593,10 +1635,11 @@ select {
 	.slider-1 .swiper-button-prev {
 		left: -24px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -24px;
 	}
+
 	/* end of testimonials */
 
 
@@ -1604,11 +1647,12 @@ select {
 	.cards-2 .card {
 		width: 342px;
 	}
-	
+
 	.cards-2 .card:nth-of-type(3n+2) {
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
 	}
+
 	/* end of pricing */
 
 
@@ -1616,6 +1660,7 @@ select {
 	.basic-2 .text-container {
 		padding: 8rem 12rem;
 	}
+
 	/* end of invitation */
 
 
@@ -1625,6 +1670,7 @@ select {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of contact */
 
 
@@ -1632,6 +1678,7 @@ select {
 	.footer .decoration-circles {
 		left: 0;
 	}
+
 	/* end of footer */
 
 
@@ -1644,6 +1691,8 @@ select {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 1200px */
