@@ -632,6 +632,8 @@
                   <button type="submit" class="form-control-submit-button">
                     Submit
                   </button>
+                  <p id="email-sent" class="text-success mt-2 d-none">Message Sent Successsfuly</p>
+                  <p id="sending-failed" class="text-danger mt-2 d-none">Something Went Wrong. Please Try Again</p>
                 </div>
               </form>
             </div>
@@ -703,6 +705,13 @@
     <!-- end of footer -->
     <!-- end of footer -->
 
+    <div id="loader" class="overlay">
+      <div class="overlay-content">
+        <h1>Sending...</h1>
+        <img src="images/loader.gif" width="50" alt="loader" />
+      </div>
+    </div>
+
     <!-- Copyright -->
     <div class="copyright bg-gray">
       <div class="container">
@@ -754,6 +763,7 @@
     <!-- Custom scripts -->
     <script>
       function sendEmail(event) {
+        document.getElementById("loader").style.width = "100%";
         event.preventDefault();
 
         const name = document.getElementById("name").value;
@@ -766,15 +776,19 @@
         Email.send({
           SecureToken: "8781508b-ec5e-4ea8-83ea-75c6910ea887",
           To: "turingsphere@gmail.com",
-          From: "turingsphere@gmail.com",
+          From: "noreply@turingsphere.com",
           Subject: "New Contact From Turing Sphere",
           Body: emailBody,
         }).then((response) => {
           if (response === "OK") {
-            console.log("Email sent successfully: " + response);
             document.getElementById("contact-form").reset();
+            document.getElementById("loader").style.width = "0%";
+            document.getElementById("email-sent").classList.remove("d-none");
+            document.getElementById("sending-failed").classList.add("d-none");
           } else {
-            console.log("Error sending email: " + response);
+            document.getElementById("loader").style.width = "0%";
+            document.getElementById("email-sent").classList.add("d-none");
+            document.getElementById("sending-failed").classList.remove("d-none");
           }
         });
       }
