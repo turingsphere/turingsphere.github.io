@@ -1016,6 +1016,9 @@ select {
 	color: #6168ff;
 }
 
+.bg-contact-input {
+	background-color: #eeeff7;
+}
 
 /******************/
 /*     Footer     */
@@ -1339,6 +1342,8 @@ select {
 		display: inline-block;
 		width: 298px;
 		vertical-align: top;
+		background-color: #eeeff7;
+		border: 0;
 	}
 
 	.cards-1 .card:nth-of-type(3n+2) {
